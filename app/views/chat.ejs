@@ -113,10 +113,10 @@
 
 			$('#enviar_mensagem').click(function(){
 				socket.emit('msgParaServidor',
-					{ apelido: $('#apelido').val(), mensagem: $('#mensagem').val(), apelido_atualizado_nos_clientes: $('#apelido_atualizado_nos_clientes').val }
+					{ apelido: $('#apelido').val(), mensagem: $('#mensagem').val(), apelido_atualizado_nos_clientes: $('#apelido_atualizado_nos_clientes').val() }
 				);
 				$('#mensagem').val("");
-				$('apelido_atualizado_nos_clientes').val(1);
+				$('#apelido_atualizado_nos_clientes').val(1);
 			});
 			
 		
